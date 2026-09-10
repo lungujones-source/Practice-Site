@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Your World</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="https://edube.org/uploads/media/default/0001/04/web-favicon.png">
+
+<!-- External JavaScript -->
+<script src="script.js" defer></script>
+
+<style>
+    /* Basic styling for the page */
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        background-color: #f0f0f0;
+    }
+    h1 {
+        color: #2c3e50;
+        margin-top: 20px;
+    }
+    p {
+        font-size: 18px;
+        margin: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #2980b9;
+    }
+    img {
+        margin-top: 20px;
+        max-width: 98%;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+    <!-- Header with emoji -->
+    <h1>Discover Your World &#x1F30D;</h1>
+
+    <p>Click on a continent to explore its unique geographical features, or discover where you are right now!</p>
+
+    <!-- Geolocation Button -->
+    <button onclick="getLocation()" id="getLocation">Discover My Location</button>
+
+    <!-- Interactive World Map -->
+    <img src="https://upload.wikipedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.png" 
+        alt="Interactive World Map" usemap="#worldMap">
+
+    <map name="worldMap">
+        <!-- North America -->
+        <area shape="rect" coords="386,283,41,17" title="North America" alt="North America" id="north-america">
+
+        <!-- South America -->
+        <area shape="rect" coords="209,501,358,288" title="South America" alt="South America" id="south-america">
+
+        <!-- Europe -->
+        <area shape="rect" coords="391,68,505,217" title="Europe" alt="Europe" id="europe">
+
+        <!-- Africa -->
+        <area shape="rect" coords="533,217,387,448" title="Africa" alt="Africa" id="africa">
+
+        <!-- Asia -->  
+        <area shape="rect" coords="893,153,506,1" title="Asia" alt="Asia" id="asia">
+
+        <!-- Australia  and Oceania -->
+        <area shape="rect" coords="679,353,872,480" title="Australia and Oceania" alt="Australia and Oceania" id="australia-oceania">
+    </map>
+</body>
+</html>
